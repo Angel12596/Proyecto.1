@@ -1,0 +1,14 @@
+from turtle import *
+
+#Funcion para la ventana
+speed(0) 
+bgcolor("black") 
+setheading(45)
+
+#Funcion para crear la Flor
+for i in range(235):
+    color('#ff8fab') #color de la flor
+    circle(270-i,90), lt(90)
+    circle(270-i,90), lt(18)
+
+mainloop()
