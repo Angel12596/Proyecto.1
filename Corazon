@@ -2,7 +2,7 @@ import turtle
 
 # Configuración de la ventana
 window = turtle.Screen()
-window.bgcolor("black") 
+window.bgcolor("black") #color de la Ventana
 
 # Creación de la tortuga
 t = turtle.Turtle()
@@ -28,7 +28,7 @@ def write_message():
     t.penup()
     t.goto(-35, -20)  # Posición del texto
     t.color("white")  # Color del texto
-    t.write("TQM", font=("Arial", 25, "bold"))
+    t.write("TQM", font=("Arial", 25, "bold")) #Ajustes del texto
 
 # Dibujar el corazón y escribir el mensaje
 draw_heart()
