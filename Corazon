@@ -1,0 +1,39 @@
+import turtle
+
+# Configuración de la ventana
+window = turtle.Screen()
+window.bgcolor("black") 
+
+# Creación de la tortuga
+t = turtle.Turtle()
+t.speed(4)
+t.color("#ff8fab")  # Color del contorno del corazón
+t.pensize(13)  # Grosor de la línea aumentado
+
+# Función para dibujar el corazón
+def draw_heart():
+    t.penup()
+    t.goto(0, -100)  # Posición inicial
+    t.pendown()
+    
+    t.left(50)
+    t.forward(133)
+    t.circle(50, 200)
+    t.right(140)
+    t.circle(50, 200)
+    t.forward(133)
+
+# Función para escribir "TQM" en el centro
+def write_message():
+    t.penup()
+    t.goto(-35, -20)  # Posición del texto
+    t.color("white")  # Color del texto
+    t.write("TQM", font=("Arial", 25, "bold"))
+
+# Dibujar el corazón y escribir el mensaje
+draw_heart()
+write_message()
+
+# Finalizar el dibujo
+t.hideturtle()
+window.mainloop
