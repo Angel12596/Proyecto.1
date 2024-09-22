@@ -1,0 +1,7 @@
+import qrcode
+
+# Crear el código QR
+png = qrcode.make("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
+# Guardar el archivo como PNG
+png.save("NikorasuQR.png")
