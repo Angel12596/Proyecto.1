@@ -2,13 +2,13 @@ from turtle import *
 from math import *
 
 speed(0)
-bgcolor("black")
+bgcolor("black") #color de fondo de pantalla
 goto(0, -40)
 
-# Drawing the Leaves
+# dibujando los petalos
 for i in range(16):
     for j in range(18):
-        color('#FFA216')
+        color('#FFA216') #color de los petalos
         right(90)
         circle(150 - j * 6, 90)
         left(90)
@@ -16,7 +16,7 @@ for i in range(16):
         right(180)
     circle(40, 24)
 
-# Draw the center of the flower
+# Dibujando el centro de la flor
 color('black')
 shape('circle')
 shapesize(0.5)
