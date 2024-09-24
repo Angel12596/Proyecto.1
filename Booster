@@ -6,7 +6,7 @@ mensaje = input("Mensaje: ")
 time.sleep(3) #tiempo en que el programa empieze a repetir
 
 for i in range(mensajes):
-    pg.write(f"{i+1} {mensaje}")
+    pg.write(f"{i+1} {mensaje}") #si no quieren que les aparesca los numeros, tendran que borrar esta linea de codigo
     pg.press('enter')
 
 #se recomienda que cuando lo ejecute, habra la ventana donde quiere que se mande y repita el mensaje
