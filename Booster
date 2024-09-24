@@ -1,0 +1,13 @@
+import pyautogui as pg
+import time
+
+mensajes = int(input("¿Cuántos mensajes?: "))
+mensaje = input("Mensaje: ")
+time.sleep(3) #tiempo en que el programa empieze a repetir
+
+for i in range(mensajes):
+    pg.write(f"{i+1} {mensaje}")
+    pg.press('enter')
+
+#se recomienda que cuando lo ejecute, habra la ventana donde quiere que se mande y repita el mensaje
+#It is recommended that when you run it, there will be the window where you want it to be sent and repeat the message
